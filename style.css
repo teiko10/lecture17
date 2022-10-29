@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    line-height: 21px;
+    font-family: "ROBOTO";
+}
+.header {
+    background: url(./img/Rectangle\ 1.png);
+    height:100vh;
+    background-size: cover;
+    padding: 16px 72px;
+    position: relative;
+    margin-bottom: 64px;
+     }
+    .header_logo{
+        width: 117.25px;
+        height: 19px;
+    }
+    .menu {
+        display: flex;
+        gap:16px;
+        align-items: center;
+    }
+    .menu img {
+        width: 27px;
+        height: 10px;
+    }
+.menu_conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+.menu span {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.1em;
+color: #FCFDFD;
+}
+
+.header_headline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 90%;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: #FCFDFD;
+    }
+
+    .header_headline span {
+        font-weight: 50px;
+        font-style: italic;
+        line-height: 96px;
+    }
+
+    .recent_posts{
+        padding: 0px 15px;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 64px;
+    }
+
+    .card1{
+    display: flex;
+    flex-direction: column;}
+
+    .card1 h3{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        margin-bottom: 24px;
+    }
+
+  .card1 img{
+    margin-bottom: 16px;
+    object-fit: cover;
+ }
+
+ .card1 p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color:#384353;
+    margin-bottom: 24px;
+ }
+
+ .card1 a{
+    font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.1em;
+color: #323334;
+text-decoration: none;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+     "first first first second"
+    "first first first third"
+    "first first first third";
+    gap: 24px 20px;
+    padding: 0px 18px;
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.one {
+    grid-area: first;
+}
+
+.two {
+     grid-area: second;
+}
+
+.three {
+     grid-area: third;
+}
+
+.footer{
+    background: #384353;
+    padding: 45px;
+    margin-top: 64px;
+}
+
+.footer span {
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.1em;
+color: #F5F4F3;
+border-top: 1px solid;
+border-bottom: 1px solid;
+display: block;
+padding: 24px 0;
+text-align: center;
+}
